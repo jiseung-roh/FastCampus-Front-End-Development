@@ -1,5 +1,5 @@
 ### hello
-```<!DOCTYPE html>
+```html
 <html>
 <head>
 	<title></title>
