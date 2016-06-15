@@ -35,4 +35,4 @@ $ cd /Users/rohjiseung/Documents/Favorites/School/WEEK01/20160614
 $ http-server -o
 ```
 
-다음 코맨
+다음 코맨드를 실행시키면, 브라우저에 http://127.0.0.1:8080/ 주소로 로컬 호스트가 설정된 것을 볼 수 있다.
