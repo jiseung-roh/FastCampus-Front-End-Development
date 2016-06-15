@@ -33,3 +33,16 @@ $ http-server -o
 * 절대경로
 - 루트폴더(Root Folder)를 기준으로 해서 파일의 경로를 찾을 수 있다.
 - 절대경로를 설정할 땐 경로 제일 앞에 '/'를 붙여주면 된다. (ex. `href="/css/style.css"`)
+
+
+#### Favicon 설정
+1. 포토샵에서 Favicon으로 사용할 이미지를 제작한다.
+- 이미지는 32*32px 사이즈로 작업한다. png로 작업해도 괜찮으나, 일부 IE 브라우저에서는 .iso 파일만 인삭할 수 있기에 별도의 작업이 필요하다.
+
+2. `html`의 `head`에 favicon 링크 추가하기.
+```html
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
+</head>
+```
+favicon snippet : link:favicon
