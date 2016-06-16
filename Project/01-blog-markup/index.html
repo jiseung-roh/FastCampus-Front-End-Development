@@ -12,6 +12,7 @@
 	<meta name="description" content="reviews">
 	<meta name="keywords" content="review,frontend">
 	<meta name="author" content="jiseung roh">
+	<link rel="shortcut icon" type="image/x-icon" href="image/favicon.png">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="css/type.css">
 	<link rel="stylesheet" type="text/css" href="css/layout.css">
@@ -22,12 +23,16 @@
 <body>
 	<header>
 		<div class="container">
-			<h1>Pixel Density, Demystified</h1>
-			<p>How pixel density works and how it affects your designs.</p>
+			<div class="art-header">
+				<h1>Pixel Density, Demystified</h1>
+				<p>How pixel density works and how it affects your designs.</p>
+			</div>
 			<div class="author">
 				<img src="https://cdn-images-1.medium.com/fit/c/200/200/1*aVnImjuBof_3I3UFySH26g.jpeg" alt="Peter Nowell" class="profile">
-				<p class="name">Peter Nowell</p>
-				<p class="intro">Designer based in San Francisco, designing apps, websites, brand identities, and more. Creator of Sketch Master—pro training courses for Sketch. pnowell.com</p>
+				<div class="author-profile">
+					<p class="name">Peter Nowell</p>
+					<p class="intro">Designer based in San Francisco, designing apps, websites, brand identities, and more. Creator of Sketch Master—pro training courses for Sketch. pnowell.com</p>
+				</div>
 			</div>
 		</div>
 
@@ -35,14 +40,29 @@
 	</header>
 
 	<div class="container">
+		<nav class="index">
+			<h2>Index.</h2>
+			<ul>
+				<li><a href="#header">Introduction</a></li>
+				<li><a href="#ptdp">PT &amp; DP</a></li>
+				<li><a href="#controlled">Controlled Chaos</a></li>
+				<li><a href="#designinvector">Design in vector.Design at 1x.</a></li>
+				<li><a href="#fake">Fake it 'till ya make it!</a></li>
+				<li><a href="#youreye">Your Eye's Perception of Scale</a></li>
+				<li><a href="#sanity">Sanity Check?</a></li>
+				<li><a href="#essential">Essential Resources</a></li>
+			</ul>
+		</nav>
+		<!-- ./nav -->
+
 		<section>
-			<header id="art-header">
+			<header id="header">
 				<p>
 					Pixel density refers to how many pixels have been squeezed into a physical amount of space (often an inch). On the first Mac, there were 72 pixels per inch — which may sound like a lot but it actually required that graphics conform to these huge pixels.
 				</p>
 				<figure>
 					<img src="https://cdn-images-1.medium.com/max/1600/1*bIx72q_ehX4mlHkInGor8Q.png" alt="Icons for the orginaml Mac">
-					<figcaption>Icons for the original Mac, designed by <a href="http://www.kareprints.com/">Susan Kare</a>.</figcaption>
+					<figcaption>Icons for the original Mac, designed by <a href="http://www.kareprints.com/" class="user-link">Susan Kare</a>.</figcaption>
 				</figure>
 				<p>
 					Screen technology has evolved tremendously since then, and now even the most basic computer screens are somewhere in the 115 to 160 pixel per inch (“ppi”) range. But a new chapter in this story began in 2010 when Apple introduced an iPhone with a Retina Display — a super crisp screen that doubled the pixels per inch. The result was graphics with so much more clarity than we’d ever seen.
@@ -121,7 +141,9 @@
 			<!-- /.fake -->
 			
 			<section id="youreye">
-				<img src="https://cdn-images-1.medium.com/max/1600/1*oVTogZXx_goEHOM404d3qA@2x.png" alt="perception scale">
+				<figure class="size">
+					<img src="https://cdn-images-1.medium.com/max/1600/1*oVTogZXx_goEHOM404d3qA@2x.png" alt="perception scale">
+				</figure>
 				<h2>Your Eye's Perception of Scale</h2>
 				<p>
 					Let’s put all this pixel density stuff aside for a minute, and consider this question: should a button always be the same physical size across devices? Of course we’re just using a button as an example, but we could be talking about an icon, or text, or a toolbar. Should these be a consistent size across all devices? The general consensus is that it depends.
@@ -193,22 +215,14 @@
 					Check out more of the <a href="http://sketchmaster.com/pixel-density/?sm_s=m12c" class="link">top pixel density resources</a> for designers.
 				</p>
 			</section>
-			<!-- /.essential --></section>
-		
-			<footer>
-				<p class="italic">
-					<a href="http://pnowell.com/news/?SQF_F=m12" class="link">Be the first to know</a> when I publish new design articles and resources.
-				</p>
-				<p class="italic">
-					This article and video are part of Sketch Master — online training courses for professionals learning Sketch. You’ll learn tons of tricks and practical workflows, by designing real-world UI/UX and app icon projects.
-				</p>
-				<div class="ft-author">
-					<img src="https://cdn-images-1.medium.com/fit/c/200/200/1*aVnImjuBof_3I3UFySH26g.jpeg" alt="Peter Nowell">
-					<p class="name">Peter Nowell</p>
-					<p class="intro">Designer based in San Francisco, designing apps, websites, brand identities, and more. Creator of <a href="http://sketchmaster.com/?sm_s=m12d" class="link">Sketch Master</a>—pro training courses for Sketch. pnowell.com</p>
-				</div>
-			</footer>
+			<!-- /.essential -->
+		</section>
+	</div>
+
+	<div class="container">
+		<footer>
+			<p>Reference link : <a href="https://medium.com/@pnowelldesign/pixel-density-demystified-a4db63ba2922#.aqirqteqo">https://medium.com/@pnowelldesign/pixel-density-demystified-a4db63ba2922#.aqirqteqo</a></p>
+		</footer>
 	</div>
 </body>
 </html>
- No newline at end of file
