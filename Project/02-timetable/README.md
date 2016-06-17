@@ -14,6 +14,8 @@
 2. `<table>` 스타일링 기초
 
 
+
+
 ###1. `<table>` 작성 방법 노하우
 HTML의 `<table>` 요소를 구조화할 때 헷갈릴 수 있는 부분들이 많아서 다음과 같은 프로세스를 따르면 쉽게 `<table>` 요소를 작성할 수 있다.
 
@@ -46,9 +48,7 @@ HTML의 `<table>` 요소를 구조화할 때 헷갈릴 수 있는 부분들이 �
   <tr><th>포도</th>  <td>포도는 포도속(Vitis) 식물의 총칭, 또는 그 열매를 말한다.</td></tr> <!-- 3행 -->
   ```
   
-  4. 이 모두를 `<table>` 요소로 묶어주고, 표를 설명하는 `<caption>`을 `<table>` 바로 다음으로 추가한다.
-  
-  The HTML <caption> Element (or HTML Table Caption Element) represents the title of a table. Though it is always the first descendant of a <table>, its styling, using CSS, may place it elsewhere, relative to the table. ([MDN](https://developer.mozilla.org/en/docs/Web/HTML/Element/caption)
+  4. 이 모두를 `<table>` 요소로 묶어주고, 표를 설명하는 `<caption>`을 `<table>` 바로 다음으로 추가한다. 
   
   ```html
   <table>
