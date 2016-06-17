@@ -52,7 +52,7 @@ HTML의 `<table>` 요소를 구조화할 때 헷갈릴 수 있는 부분들이 �
   
   ```html
   <table>
-  <caption>과일 설명표</caption> <!-- 표의 주제에 대해 기입, 
+  <caption>과일 설명표</caption> <!-- 표의 주제에 대해 기입, CSS로 마음대로 스타일링 가능 -->
   <tr><th>제목</th>  <th>내용</th></tr>
   <tr><th>사과</th>  <td>사과는 서늘한 기후에 적당한 온대북부과수이다.</td>
   <tr><th>포도</th>  <td>포도는 포도속(Vitis) 식물의 총칭, 또는 그 열매를 말한다.</td></tr>
