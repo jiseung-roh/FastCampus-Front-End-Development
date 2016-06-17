@@ -8,7 +8,7 @@
 
 * 결과물
 
-![결과물](https://github.com/jiseung-roh/FastCampus-Front-End-Development/blob/master/Project/02-timetable/result.png)
+![결과물](https://github.com/jiseung-roh/FastCampus-Front-End-Development/blob/master/Project/02-timetable/result-min.png)
 
 
 
