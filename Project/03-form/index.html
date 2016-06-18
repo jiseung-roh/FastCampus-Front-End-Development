@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-KR" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>SIGN UP | HTML Markup Practice</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sign up page">
+	<meta name="author" content="jiseung roh">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="shortcut icon" type="image/x-icon" href="fav-jiseung.png">
+</head>
+<body>
+	<div class="sign-up">
+		<header>
+			<h1 class="logo">Empire</h1>
+			<p>Join the dark side.<br>We have cookies.</p>
+			<div class="link">
+				<a href="#">About</a>
+				<a href="#">Imprint</a>
+				<a href="#">Contact</a>
+			</div>
+		</header>
+		<section class="sign-up-form">
+			<form action="#" method="POST" name="sign_up_form">
+				<label for="username">
+					<p>username</p>
+					<input type="text" id="username" name="user_username">
+				</label>
+				<label for="email">
+					<p>e-mail</p>
+					<input type="email" id="email" name="user_email">
+				</label>
+				<label for="password">
+					<p>password</p>
+					<input type="password" id="password" name="user_password">
+				</label>
+				<label for="repeat-password">
+					<p>repeat password</p>
+					<input type="password" id="repeat-password" name="user_repeat_password">
+				</label>
+				<div class="btn-group">
+					<button type="submit" class="submit">SIGN UP NOW</button>
+					<a href="#" class="already-member" aria-role="button">I am already a member</a>
+				</div>
+			</form>
+		
+		</section>
+	</div>
+</body>
+</html>
