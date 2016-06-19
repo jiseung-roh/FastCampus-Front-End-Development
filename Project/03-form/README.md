@@ -1,4 +1,4 @@
-######WEEK 01 | FastCampus Front End Develop School
+######WEEK 01 | Markup A Sign Up Page
 
 #Form Element Markup
 `<form>`과 `<input>` 요소를 활용하여 Sign up page를 마크업하고 CSS 스타일링 하기
