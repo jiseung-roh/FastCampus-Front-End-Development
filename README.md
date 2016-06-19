@@ -1,20 +1,5 @@
-###### hello
-```html
-<html>
-<head>
-	<title></title>
-</head>
-<body>
+###### FastCampus | Front End Develop School
 
-</body>
-</html>
-```
+#Welcome on board!
 
-안녕하세요
 
-1. 안녕하세요
-2. 안녕하세요
-
-* 이건 무엇일까요
-	* unordered list입니다
-[안녕](http://naver.com)
