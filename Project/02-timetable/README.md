@@ -1,4 +1,4 @@
-######WEEK 01 | FastCampus Front End Develop School
+######WEEK 01 | Markup A Timetable
 
 #Timetable Markup
 `<table>` 요소를 활용하여 시간표를 마크업하고 CSS 스타일링 하기
