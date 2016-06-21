@@ -1,0 +1,181 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:400,300,100,700,900);
+
+* {
+	margin: 0;
+	box-sizing: border-box;
+	font-family: 'Lato', sans-serif;
+	font-weight: 300;
+	color: #0b4853;
+}
+
+html {
+	font-size: 12px;
+	line-height: 1.5;
+}
+
+header {
+	width: 100%;
+	padding-top: 4.5rem;
+	padding-bottom: 4.5rem;
+	background-color: #6496ff;
+	color: #fff;
+}
+
+main {
+	padding-top: 7.5rem;
+	padding-bottom: 18.75rem;
+}
+
+footer {
+	width: 100%;
+	padding-top: 3.75rem;
+	padding-bottom: 5rem;
+	background-color: #fafbfb;
+}
+
+h2 {
+	margin-bottom: 3rem;
+}
+
+label {
+	display: block;
+}
+
+input, select {
+	margin-top: 1.25rem;
+	margin-bottom: 2.92rem;
+	padding: 1.42rem;
+}
+
+option {
+	padding: 1.42rem;
+}
+
+select {
+	background-color: #fff;
+}
+
+.container {
+	width: 87.83rem;
+	margin: 0 auto;
+}
+
+.row::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.step {
+	margin-top: 3.75rem;
+}
+
+.step p:first-child {
+	margin-bottom: 1rem;
+}
+
+.user-info::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.user-first-name, .user-last-name {
+	float: left;
+}
+
+.user-first-name {
+	margin-right: 2.5rem;
+}
+
+.short, .long, .expiration-date input, .cvc input {
+	height: 3.75rem;
+	border: 1px solid #d0d2d5;
+	border-radius: 0.25rem;
+}
+
+.short { width: 16.25rem; }
+
+.long { width: 35rem; }
+
+.payment, .credit-card {
+	width: 35rem;
+	float: left;
+}
+
+.payment {
+	margin-right: 10rem;
+}
+
+.payment-plan ul {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.payment-plan ul li label {
+	height: 3.6rem;
+}
+
+.payment-plan ul li p {
+	padding-left: 2rem;
+	color: rgba(11,72,83,.7);
+}
+
+li input[type="radio"] {
+	margin-right: 1rem;
+}
+
+.expiration-date input {
+	width: 7.5rem;
+	margin-right: 2.4rem;
+}
+
+.label-hidden {
+	display: none;
+}
+
+.card-details::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+.expiration-date, .cvc {
+	float: left;
+}
+
+.cvc {
+	width: 15rem;
+}
+
+.button {
+	display: block;
+	width: 20rem;
+	height: 3.75rem;
+	padding-left: 1.67rem;
+	padding-right: 1.67rem;
+	margin-bottom: 3rem;
+	border-radius: 0.25rem;
+	background-color: #252e3b;
+	font-size: 1rem;
+	line-height: 3.75rem;
+	color: #fff;
+}
+
+button.button {
+	margin-top: 2.5rem;
+	text-align: left;
+	border: none;
+}
+
+.link {
+	margin-top: 4rem;
+}
+
+footer .container>p {
+	margin-bottom: 0.75rem;
+}
+
+.link a {
+	display: block;
+	margin-bottom: 1.17rem;
+}
