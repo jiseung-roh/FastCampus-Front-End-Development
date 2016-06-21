@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-KR" dir="ltr">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta charset="UTF-8">
+	<title>THINKFUL SIGN UP | Step 2</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Thinkful sign up page, markup practice for &lt;form&gt; elements, step 2">
+	<meta name="author" content="jiseung roh">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/type.css">
+</head>
+<body>
+	<!-- header -->
+	<header>
+		<div class="container">
+			<h1 class="logo">THINKFUL</h1>
+			<div class="page-header">
+				<p>YOU'RE SIGNING UP FOR</p>
+				<p>Web Development Career Path</p>
+			</div>
+			<div class="step">
+				<p>Step 2 of 2</p>
+				<p>Create your Thinkful account</p>
+			</div>
+		</div>
+	</header>
+	<!-- // header -->
+
+	<!-- main -->
+	<main>
+		<!-- payment -->
+		<div class="container">
+			<div class="row">
+				<section class="payment">
+					<h2 class="title">Payment details</h2>
+					<form action="#" method="POST" name="payment_details">
+						<label for="start-date">When would you like to start the course?</label>
+						<select id="start-date" class="long" name="start_date">
+							<option value="3">Today</option>
+							<option value="2">Tomorrow</option>
+							<option value="1">A week later</option>
+							<option value="0">I don't know</option>
+						</select>
+						<label for="scholarship">Apply for a Women's or US Military scholarship</label>
+						<select id="scholarship" class="long" name="scholarship">
+							<option value=""></option>
+							<option value="1">Yes</option>
+							<option value="0">No</option>
+						</select>
+						<div class="payment-plan">
+							<p class="label">Payment plan</p>
+							<ul>
+								<li>
+									<label><input type="radio" name="payment_plan">Monthly payments</label>
+									<p>&dollar;1,400 payment once a month, starting today.</p>
+								</li>
+								<li>
+									<label><input type="radio" name="payment_plan">Deferred payments</label>
+									<p>&dollar;1,400 payment due today, then &dollar;500/month x3 for each month you're enrolled.</p>
+								</li>
+								<li>
+									<label><input type="radio" name="payment_plan">Student loan</label>
+									<p>&dollar;1,400 due today. Loans are issued after your first month. If you don't have one yet, enroll and then apply.</p>
+								</li>
+							</ul>
+						</div>
+					</form>
+				</section>
+				<!-- // payment -->
+				<!-- credit-card -->
+				<section class="credit-card">
+					<h2 class="title">Credit card details</h2>
+					<form action="#" method="POST" name="credit_card_details">
+						<label for="cardholder-name">Cardholder's name</label>
+						<input id="cardholder-name" class="long" type="text" name="cardholder_name" placeholder="Awesome McAwesome Pants">
+						<label for="card-number">Card number</label>
+						<input id="card-number" class="long" type="text" name="card_number" placeholder="1234 5678 9876 5432">
+						<div class="card-details">
+							<div class="expiration-date">
+								<label for="expiration-date-m">Expiration date</label>
+								<label for="expiration-date-y" class="label-hidden">Expiration date</label>
+								<input id="expiration-date-m" type="text" name="expire_date_month" placeholder="MM" maxlength="2">
+								<input id="expiration-date-y" type="text" name="expire_date_year" placeholder="YYYY" maxlength="4">
+							</div>
+							<div class="cvc">
+								<label for="cvc">CVC</label>
+								<input id="cvc" type="text" name="cvc" placeholder="123" maxlength="3">
+							</div>
+						</div>
+						<button type="submit" class="button">Enroll</button>
+					</form>
+				</section>
+				<!-- // credit-card --></div>
+		</div>
+	</main>
+	<!-- // main -->
+
+	<!-- footer -->
+	<footer>
+		<div class="container">
+			<p>If you have questions email Noel <a href="mailto:noel@thinkful.com">noel@thinkful.com</a></p>
+			<p>He's a nice guy, he'll help you with any question.</p>
+			<div class="link">
+				<a href="#">Terms of service</a>
+				<a href="#">Privacy policy</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
