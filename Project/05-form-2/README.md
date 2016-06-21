@@ -21,11 +21,15 @@
 2. `<input>`의 `type`에 따른 마크업
 
 
+
 ***
 
-### Step 1. form요소를 작성하자
+
+### Step 1. form요소를 작성하자!
+
 
 `<form>` 요소는 사용자에게 입력을 받아 웹 서버로 보낼 수 있도록 도와주는 요소이다. `<form>` 요소 내부에는 `<input>`, `<textarea>`, `<select>` 등과 같은 사용자로부터 데이터를 받을 수 있도록 해주는 요소들이나 `<button>` 등이 들어갈 수 있다.
+
 
 
 **폼 요소를 구성하는 속성**
@@ -34,6 +38,7 @@
 - `method` : 서버로 HTTP Request를 보내는 방식을 정할 수 있고, **GET과 POST 방식**을 자주 사용한다.
 - `name` : `<form>`의 이름, 문서 내 폼 요소의 name 값은 각각 달라야 한다.
 - `enctype` : `method="POST"`일때 서버에게 보내지는 콘텐츠의 MIME Type을 정의할 때 사용한다. 서버에게 보내지는 데이터가 단순한 텍스트일 때 기본값으로 `enctype="x-www-form-urlencoded`다. 하지만 서버에게 전송되는 데이터가 파일일시`enctype`을 `multiparts/form-data`로 표시한다.
+
 
 
 **GET vs POST**
@@ -48,3 +53,7 @@
   - HTTP Request Body안에 사용자의 데이터가 저장되어 전송되므로 데이터가 URL에 노출이 되지 않는다.
   - 파일 전송 시 POST를 사용한다.
   - 사용자 입력 데이터가 많아 URL이 길어질 것 같을 때 POST를 사용한다.
+  
+
+
+### Step 2. Input 요소를 작성하자!
