@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* Swiss Blog Website, (c) jiseung roh, 2016 */
+
+/* Normalized */
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Helvetica', sans-serif;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.5;
+	color: #4e4e4e;
+}
+
+body, p, h1, h2, h3, ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+h1.hidden, h2.hidden, h3.hidden {
+	display: block;
+	width: 0;
+	height: 0;
+	overflow: hidden;
+	margin-bottom: 0;
+}
+
+h2 {
+	font-weight: 600;
+	font-size: 3.5625rem;
+	line-height: 1.26;
+}
+
+p, a {
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 1.5;
+}
+
+a {
+	text-decoration: none;
+	color: #4e4e4e;
+}
+
+.ft-grey {
+	color: #a8a8a8;
+}
+
+.introduction .ft-grey {
+	font-weight: 300;
+	font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+/* LAYOUT DESIGN */
+
+.container {
+	width: 60%;
+	margin: 0 auto;
+}
+
+.clear:after, .clear::after {
+	content: "";
+	display: block;
+	clear: both;
+}
+
+.introduction {
+	margin-top: 7.5rem;
+}
+
+.introduction > h2 + p {
+	margin-top: 3rem;
+}
+
+
+/* HEADER */
+.page-header {
+	width: 100%;
+	border-top: 8px solid #e44a4a;
+	padding-bottom: 7.5rem;
+}
+
+.header-bar {
+	margin-top: 3rem;
+}
+
+.gnb ul, .gnb li {
+	float: left;
+}
+
+.gnb li {
+	margin-right: 1rem;
+}
+
+.gnb ul:last-child {
+	margin-right: 0;
+}
+
+.search {
+	float: right;
+}
+
+.reset-list ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+img {
+	margin-top: 1.5rem;
+	width: 100%;
+	height: auto;
+}
+
+.page-footer {
+	padding: 4.5rem 0;
+}
+
+.page-footer p {
+	float: left;
+	font-size: 0.8rem;
+	line-height: 1.5;
+	font-weight: 300;
+}
+
+.sns-group {
+	float: right;
+}
+
+.sns-group a {
+	float: left;
+	margin-right: 1rem;
+}
+
+.sns-group:last-child {
+	 margin-right: 0;
+}
+}
