@@ -1,0 +1,109 @@
+.blog-post article {
+	padding-top: 5rem;
+	padding-bottom: 5rem;
+}
+
+.blog-post h3 {
+	width: 70%;
+	font-size: 2rem;
+	font-weight: 400;
+	line-height: 1.3;
+	margin-bottom: 2rem;
+}
+
+.vista {
+	position: relative;
+	background-image: url(../asset/img-swiss.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+}
+
+.vista p {
+	margin-top: 1.5rem;
+	font-size: 2.3125rem;
+	line-height: 1.3;
+	color: #fff;
+	text-align: center;
+}
+
+.bg-red {
+	background-color: #e44a4a;
+}
+
+.bg-navy {
+	background-color: #354a5f;
+}
+
+.post-etc span {
+	font-weight: 300;
+	background-size: 1rem auto;
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+	padding-left: 1.5rem;
+	margin-right: 1.2rem;
+}
+
+article p {
+	margin-top: 3rem;
+	font-size: 1rem;
+	font-weight: 300;
+	line-height: 1.8;
+}
+
+blockquote {
+	margin: 0;
+	font-style: italic;
+}
+
+blockquote p {
+	margin-bottom: 1.5rem;
+}
+
+cite {
+	font-weight: 300;
+}
+
+[class$="wh"] { color: #fff; }
+
+.date { background-image: url(../asset/time.png) }
+.date-wh { background-image: url(../asset/time-wh.png) }
+.comments { background-image: url(../asset/comment.png) }
+.comments-wh { background-image: url(../asset/comment-wh.png) }
+.text { background-image: url(../asset/text.png) }
+.quote { background-image: url(../asset/quote.png); color: #fff; }
+.video { background-image: url(../asset/video.png); color: #fff; }
+.image { background-image: url(../asset/image.png) }
+.music { background-image: url(../asset/music.png); color: #fff; }
+
+/* BUTTON DESIGN */
+
+.l-btn {
+	display: block;
+	margin: 0 auto;
+	border: 0.4rem solid #fff;
+	color: #fff;
+	font-size: 2.5rem;
+	font-weight: 600;
+	background-color: transparent;
+	padding: 2.4rem 6rem;
+}
+
+.button-group button {
+	border: none;
+	width: 3rem;
+	height: 3rem;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: absolute;
+	top: 50%;
+}
+
+.previous-button {
+	background-image: url(../asset/btn-left.png);
+	left: 0;
+}
+.next-button {
+	background-image: url(../asset/btn-right.png);
+	right: 0;
+	}
