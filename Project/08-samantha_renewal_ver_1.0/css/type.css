@@ -1,0 +1,43 @@
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
+
+html {
+	font-size: 16px;
+	line-height: 1.5;
+	font-family: 'Noto Sans KR', sans-serif;
+	font-weight: 300;
+	color: #121212;
+}
+
+h1, h2, p {
+	margin: 0;
+}
+
+
+[lang="en"] {
+	font-family: "neuzeit-grotesk",sans-serif;
+}
+
+.brand {
+	font-size: 1.81rem;
+	line-height: 2.01;
+}
+
+.article__date {
+	font-size: 1.44rem;
+	line-height: 1.5;
+	font-weight: 600;
+	color: #bfbfbf;
+}
+
+.article__title {
+	font-size: 1.81rem;
+	line-height: 1.59;
+}
+
+.article__question {
+	font-weight: 500;
+}
+
+.brand-footer {
+	vertical-align: top;
+}

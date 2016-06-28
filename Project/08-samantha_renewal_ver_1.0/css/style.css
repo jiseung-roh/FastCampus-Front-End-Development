@@ -1,0 +1,117 @@
+body * {
+	box-sizing: border-box;
+}
+
+body {
+	margin: 0;
+	background-color: #e6e6e6;
+}
+
+/* 
+ * -------------------------------------------------
+ * HEADER BLOCK
+ * .page-header
+ * .brand
+ * .menu : .menu__list, .menu__item
+ * -------------------------------------------------
+*/
+
+.page-header {
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	margin-bottom: 3rem;
+}
+
+.page-header > .brand {
+	float: left;
+}
+
+.page-header > .menu {
+	float: right;
+}
+
+.menu__list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.menu__item {
+	float: left;
+	margin-right: 3rem;
+}
+
+.menu__item a {
+	font-size: inherit;
+	font-weight: 600;
+	color: #121212;
+	text-decoration: none;
+}
+
+.menu__item a:hover {
+	color: #5968d7;
+}
+
+.menu__item:last-child {
+	margin-right: 0;
+}
+
+
+/* 
+ * -------------------------------------------------
+ * MAIN-ARTICLE BLOCK
+ * .page-header
+ * .brand
+ * .menu : .menu__list, .menu__item
+ * -------------------------------------------------
+*/
+
+img {
+	margin-top: 3rem;
+	margin-bottom: 4.5rem;
+}
+
+.article__section {
+	margin-top: 3rem;
+}
+
+.article__head {
+	margin-bottom: 4.5rem;
+}
+
+.article__head + .article__section > img:first-child {
+	margin-top: 0;
+}
+
+img:last-child {
+	margin-top: 4.5rem;
+}
+
+/* 
+ * -------------------------------------------------
+ * FOOTER BLOCK
+ * .page-footer
+ * .brand-footer
+ * 
+ * -------------------------------------------------
+*/
+
+.page-footer {
+	background-color: #121212;
+	padding-top: 4.5rem;
+	padding-bottom: 9rem;
+	color: #e0e0e0;
+}
+
+.brand-footer {
+	position: relative;
+	top: -0.7rem;
+}
+
+.info__school {
+	margin-bottom: 1.5rem;
+}
+
+.info__email a {
+	text-decoration: none;
+	color: #e0e0e0;
+}
