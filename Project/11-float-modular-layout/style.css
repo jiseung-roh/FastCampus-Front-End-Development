@@ -1,0 +1,101 @@
+/*
+ *! copyright (c) jiseung.roh, 2016 
+ * --------------------------------------------------------
+ * Float를 활용하여 재사용 가능한 모듈 디자인을 해보자
+ *
+ * --------------------------------------------------------
+*/
+
+* { box-sizing: border-box; }
+
+html {
+	font-size: 16px;
+	font-family: 'Dotum', '돋움', Helvetica, 'AppleSDGothicNeo', sans-serif;
+}
+
+/* BOX DESIGN */
+.item__list {
+	width: 138px;
+	border: 1px solid #ececec;
+	background-color: #fbfbfb;
+	overflow: hidden;
+}
+
+.item_link {
+	display: block;
+	text-decoration: none;
+	color: #616161;
+	font-weight: bold;
+}
+
+.item_link:hover {
+	color: #390;
+	text-decoration: underline;
+}
+
+.item__title {
+	padding: 0.5rem 0.56rem;
+	font-size: 0.75rem;
+	line-height: 1.25;
+}
+
+.item__subtitle {
+	font-size: 0.69rem;
+	letter-spacing: -1px;
+	color: #999;
+	padding: 0.25rem 0.56rem 0.38rem;
+}
+
+.item__image {
+	vertical-align: bottom;
+}
+
+.long .item_link {
+	position: relative;
+	width: 138px;
+	color: #fff;
+}
+
+.long:hover {
+	text-decoration: underline;
+}
+
+.long .item__title {
+	position: absolute;
+	padding: 0.63rem 0.56rem;
+	bottom: 0;
+	left: 0;
+	font-size: 0.875rem;
+	line-height: 1.29;
+}
+
+
+/* LAYOUT DESIGN */
+
+.naver-movie-section {
+	width: 39.06rem;
+	padding: 0.625rem;
+	margin: 1.5rem auto;
+}
+
+.naver-movie-section:after, .naver-movie-section::after {
+	content: '';
+	display: block;
+	clear: left;
+}
+
+.long, .item__list {
+	float: left;
+	margin: 0 0.41rem 0.56rem;
+}
+
+
+/* ETC */
+
+.title {
+	margin: 1.5rem auto;
+	font-size: 1.56rem;
+	line-height: 1.5;
+	font-weight: 100;
+	text-align: center;
+}
