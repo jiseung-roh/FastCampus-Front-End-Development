@@ -8,7 +8,7 @@
 #### Momentum Design 
 
 - 참고 디자인
-![Momentum Dashboard](https://momentumdash.com/)
+[Momentum Dashboard](https://momentumdash.com/)
 
 - 결과물
 ![결과물](https://github.com/jiseung-roh/fast-campus-study/blob/master/Project/12-position-layout/result.png)
