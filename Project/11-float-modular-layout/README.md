@@ -8,7 +8,7 @@
 #### Naver Movie Section
 
 - 참고 디자인
-![네이버](http://www.naver.com/)
+[네이버](http://www.naver.com/)
 
 - 결과물
 ![결과물](https://github.com/jiseung-roh/fast-campus-study/blob/master/Project/11-float-modular-layout/result.png)
