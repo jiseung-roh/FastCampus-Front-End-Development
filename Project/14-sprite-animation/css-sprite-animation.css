@@ -1,0 +1,38 @@
+@charset "utf-8";
+
+body {
+	width: 100%;
+	height: 100vh;
+}
+
+[class*="sprite-animation-"] {margin: 5rem auto; }
+.sprite-animation-fighter {
+	width: 70px;
+	height: 110px;
+	background: url(asset/sprite-fighter.png) no-repeat ;
+	animation: fighter steps(19) 2s infinite;
+}
+
+@keyframes fighter {
+	0% { background-position-x: 0; }
+	100% { background-position-x: -1330px; }
+}
+
+.sprite-animation-mario {
+	width: 100px;
+	height: 100px;
+	background: url(asset/mario.png) no-repeat;
+	animation: mario steps(28) 3s infinite;
+}
+
+@keyframes mario {
+	0% { background-position-x: -2800px; }
+	100% { background-position-x: 0; }
+}
+
+p {
+	text-align: center;
+	font-family: 'Spoqa Han Sans';
+	font-size: 2rem;
+	font-weight: 200;
+}
