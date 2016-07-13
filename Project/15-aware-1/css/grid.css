@@ -1,0 +1,48 @@
+@charset "utf-8";
+/*
+ * --------------------------------------------------------------------------------
+ * Grid System Design for Aware.com 
+ * grid.css (c) jiseung.roh, 2016
+ * --------------------------------------------------------------------------------
+*/
+
+/* Default Grid System Settings */
+body { background-color: #E2E2E2; }
+.container {
+	width: 960px;
+	min-height: 100vh;
+	margin-left: auto;
+	margin-right: auto;
+}
+[class*="col-"] { float: left; }
+
+/* Clearfix */
+.clearfix:after, .clearfix::after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+
+/* Column Module */
+.col-1 { width: 120px; }
+.col-2 { width: 240px; }
+.col-3 { width: 360px; }
+.col-4 { width: 480px; }
+.col-5 { width: 600px; }
+.col-6 { width: 720px; }
+.col-7 { width: 840px; }
+.col-8 { width: 960px; }
+.micro-col-1 { width: 60px; }
+.micro-col-2 { width: 120px; }
+
+/* Row Module */
+.row-1 { height: 120px; }
+.row-2 { height: 240px; }
+.row-3 { height: 360px; }
+.row-4 { height: 480px; }
+.row-5 { height: 600px; }
+.row-6 { height: 720px; }
+.row-7 { height: 840px; }
+.row-8 { height: 960px; }
+.micro-row-1 { width: 60px; }

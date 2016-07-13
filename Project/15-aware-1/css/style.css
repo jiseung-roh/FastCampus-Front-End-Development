@@ -1,0 +1,241 @@
+@charset "utf-8";
+/*
+ * --------------------------------------------------------------------------------
+ * Basic CSS Settings for Aware.com 
+ * style.css (c) jiseung.roh, 2016
+ * --------------------------------------------------------------------------------
+ * Box Model & Dimension -> Layout & Position -> Design Details -> State Design
+ * --------------------------------------------------------------------------------
+*/
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Page Header Design 
+ * logo + nav-menu-button + nav(nav-list + utility-list)
+ * --------------------------------------------------------------------------------
+ */
+
+.page-header {
+	width: 100%;
+	height: 80px;
+	padding: 30px 30px 30px 80px;
+	position: relative;
+	background-color: #FFF;
+}
+
+/* Logo*/
+.logo {
+	float: left;
+	width: 95px;
+	height: 1em;
+	margin-right: 63px;
+	font-size: 19px;
+	line-height: 1em;
+	background: url(../asset/logo-aware.svg) no-repeat;
+	background-size: 100% 100%;
+}
+
+/* Nav-menu button */
+.nav-menu {
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	left: 30px;
+	background: url(../asset/ui-icon-hamburger.svg) no-repeat;
+	background-size: 100% 100%;
+}
+
+/* Nav-list */
+.nav-list { float: left; margin-right: 221px; }
+.nav--list-item { float: left; margin-right: 30px; }
+.nav--list-item:last-child { margin-right: 0; }
+.nav--list-item a {
+	padding-right: 16px;
+	background: url(../asset/ui-icon-arrow-down.svg) no-repeat;
+	background-size: 6px 4px;
+	background-position: right center;
+	opacity: 1;
+	transition: opacity .2s ease-in;
+}
+.nav--list-item a:hover { opacity: 0.7; }
+
+/* Utility-list*/
+.utility-list { float: left; }
+.utility--list-item {
+	float: left;
+	width: 16px;
+	height: 16px;
+	margin-right: 40px;
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	background-position: center center;
+}
+.utility--list-item:nth-child(1) { background-image: url(../asset/ui-icon-cart.svg); position: relative;}
+.utility--list-item:nth-child(2) { background-image: url(../asset/ui-icon-mypage.svg); }
+.utility--list-item:nth-child(3) { background-image: url(../asset/ui-icon-search.svg); margin-right: 0; }
+.cart-item-number {
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	position: absolute;
+	top: -9px;
+	right: -11px;
+	font-size: 9px;
+	line-height: 17px;
+	text-align: center;
+	background-color: #1F4BA5;
+	color: #FFF;
+}
+
+/* Layout */
+.page-navigation { float: left; margin-top: 3px; }
+
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Slider Design 
+ * slider-main(description+button-nav+img) + slider-side-list
+ * --------------------------------------------------------------------------------
+ */
+
+/* Slider-main */
+/* Description */
+.slider-main { position: relative; }
+.slider-main .description {
+	width: 240px;
+	position: absolute;
+	top: 120px;
+	left: 120px;
+}
+.slider-main .description > span { display: inline-block; margin-bottom: 30px; text-indent: 2px; }
+.slider-main .description > h3 { margin-bottom: 20px; }
+.slider-main .description > p { line-height: 24px; margin-bottom: 36px; }
+.button-group > * {
+	float: left;
+	padding: 10px 20px;
+	font-size: 1em;
+	line-height: 1em;
+	background-color: #1F4BA5;
+}
+.button-group > span {
+	border-radius: 30px 0 0 30px;
+	border-right: 1px solid rgba(255,255,255,.1);
+}
+.button-group > button {
+	border-radius: 0 30px 30px 0;
+}
+
+/* Button-nav */
+.nav-button {
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	opacity: .5;
+	transition: opacity .2s ease-in;
+}
+.nav-button:hover { opacity: 1; }
+.nav-button.left { background-image: url(../asset/ui-icon-arrow-left.svg); left: 30px; }
+.nav-button.right { background-image: url(../asset/ui-icon-arrow-right.svg); right: 30px; }
+
+
+/* Slider-side-list */
+/* Slider-side */
+.hit-area { position: relative; }
+.slider-side > .hit-area:after, .slider-side > .hit-area::after {
+	content: '';
+	position: absolute;
+	background-image: linear-gradient(to right, #1F4BA5 4.1667%, rgba(255,255,255,.7) 4.1667%);
+	background-size: 100% 1px;
+	transition: right .3s ease-in-out;
+}
+.slider-side:not(.slider-side--selected) > .hit-area:after, .slider-side:not(.slider-side--selected) > .hit-area::after { top: 0; bottom: 0; left: 0; right: 100%; }
+.slider-side--selected > .hit-area:after, .slider-side--selected > .hit-area::after { top: 0; bottom: 0; left: 0; right: 0%; }
+.slider-side:not(.slider-side--selected) > .hit-area:hover:after, .slider-side:not(.slider-side--selected) > .hit-area:hover::after, .slider-side:not(.slider-side--selected) > .hit-area:focus:after, .slider-side:not(.slider-side--selected) > .hit-area:focus::after { right: 0; }
+
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Banner Design 
+ * banner-item + state design
+ * --------------------------------------------------------------------------------
+ */
+
+/* Banner-item */
+.banner-item { position: relative; overflow: hidden;}
+.banner-item .description {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 1;
+}
+.banner-item .description > h3.fontsize-16 { display:block; line-height: 24px;}
+.banner-item .description > span { display:block; }
+
+/* Banner-item:nth-child */
+.banner-item:nth-of-type(1) .description > span, .banner-item:nth-of-type(3) .description > span { margin-bottom: 20px; }
+.banner-item:nth-of-type(1) .description > h3 { margin-bottom: 15px; }
+.banner-item:nth-of-type(2) .description > span { margin-bottom: 120px; }
+.banner-item:nth-of-type(1) .description { padding-top: 120px; }
+.banner-item:nth-of-type(2) .description { padding: 40px 40px 0; }
+.banner-item:nth-of-type(3) .description { padding: 140px 45px 0; }
+
+/* State Design */
+.banner-item > .hit-area > img {
+	transform: scale(1);
+	transition: transform .3s ease-in-out;
+}
+.banner-item > .hit-area:hover > img, .banner-item > .hit-area:focus > img { transform: scale(1.2); }
+
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Featured Products Design 
+ * featured-header + featured-items
+ * --------------------------------------------------------------------------------
+ */
+
+/* Feautred-commont */
+.featured > .clearfix > * { border-right: 1px solid #ECECEC; border-bottom: 1px solid #ECECEC; }
+.featured > .clearfix > *:last-child { border-right: none; }
+/* Featured-header */
+.featured { background: #FFF; }
+.featured-header {
+	padding: 40px 75px 0;
+	text-align: center;
+}
+.featured-header h2 { position: relative; margin-bottom: 30px; line-height: 30px; }
+.featured-header h2::before {
+	content: '';
+	display: block;
+	width: 100%;
+	height: 14px;
+	margin-bottom: 30px;
+	background: url(../asset/ui-icon-ruby.svg) no-repeat;
+	background-size: 16px auto;
+	background-position: center;
+}
+.featured-header p { line-height: 18px; }
+
+/* Featured-items */
+.featured-items > .hit-area {
+	padding: 30px;
+	text-align: center;
+}
+
+.featured-items  img {
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*
+ * --------------------------------------------------------------------------------
+ * Type Design for Aware.com 
+ * type.css (c) jiseung.roh, 2016
+ * --------------------------------------------------------------------------------
+*/
+
+
+/* Font Size Settings */
+.fontsize-10 { font-size: 10px; }
+.fontsize-12 { font-size: 12px; }
+.fontsize-14 { font-size: 14px; }
+.fontsize-16 { font-size: 16px; }
+.fontsize-18 { font-size: 18px; }
+.fontsize-24 { font-size: 24px; }
+.fontsize-36 { font-size: 36px; }
+
+
+/* Font Color Settings */
+.fontcolor-darkgrey { color: #222; }
+.fontcolor-grey { color: #868686; }
+.fontcolor-blue { color: #1F4BA5; }
+.fontcolor-white { color: #FFF; }
+
+
+/* Font Family Settings */
+.valera { font-family: 'Varela Round', sans-serif; font-weight: 400; }
+.ptserif { font-family: 'PT Serif', serif; font-weight: 400; font-style: italic; }
+.oswald { font-family: 'Oswald', sans-serif; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; }
