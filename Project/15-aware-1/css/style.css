@@ -73,7 +73,7 @@
 	background-size: 100% 100%;
 	background-position: center center;
 }
-.utility--list-item:nth-child(1) { background-image: url(../asset/ui-icon-cart.svg); position: relative;}
+.utility--list-item:nth-child(1) { background: url(../asset/ui-icon-cart.svg) no-repeat; position: relative;}
 .utility--list-item:nth-child(2) { background-image: url(../asset/ui-icon-mypage.svg); }
 .utility--list-item:nth-child(3) { background-image: url(../asset/ui-icon-search.svg); margin-right: 0; }
 .cart-item-number {
@@ -206,36 +206,305 @@
  */
 
 /* Feautred-commont */
-.featured > .clearfix > * { border-right: 1px solid #ECECEC; border-bottom: 1px solid #ECECEC; }
-.featured > .clearfix > *:last-child { border-right: none; }
+.featured > .clearfix > *, .blog > * { border-right: 1px solid #ECECEC; border-bottom: 1px solid #ECECEC; }
+.featured > .clearfix > *:last-child, .blog > * :last-child { border-right: none; }
 /* Featured-header */
 .featured { background: #FFF; }
-.featured-header {
+.section-header {
 	padding: 40px 75px 0;
 	text-align: center;
 }
-.featured-header h2 { position: relative; margin-bottom: 30px; line-height: 30px; }
-.featured-header h2::before {
+.section-header h2 { position: relative; margin-bottom: 30px; line-height: 30px; }
+.section-header h2::before {
 	content: '';
 	display: block;
 	width: 100%;
 	height: 14px;
 	margin-bottom: 30px;
-	background: url(../asset/ui-icon-ruby.svg) no-repeat;
-	background-size: 16px auto;
-	background-position: center;
 }
-.featured-header p { line-height: 18px; }
+.featured-header h2::before {
+	background: url(../asset/ui-icon-ruby.svg) no-repeat center center;
+	background-size: contain;
+}
+.section-header p { line-height: 18px; }
 
 /* Featured-items */
 .featured-items > .hit-area {
-	padding: 30px;
+	position: relative;
+	padding: 30px 49px 27px;
 	text-align: center;
 }
-
+.featured-items h3 { line-height: 16px; }
 .featured-items  img {
 	position: absolute;
 	transform: translate(-50%, -50%);
 	top: 50%;
 	left: 50%;
+}
+
+/* Featured-items > info */
+.info { width: 142px; position: absolute; bottom: 27px;}
+.info > * { vertical-align: middle; }
+.info--tag {
+	padding: 2px 1px 2px 4px;
+	border-radius: 3px 0 0 3px;
+	position: absolute;
+	font-size: 8px;
+	line-height: 1.5;
+	left: 0;
+	top: 3px;
+}
+.info--tag:after, .info--tag::after {
+	content: '';
+	display: inline-block;
+	width: 0;
+	height: 0;
+	border-top: 8px solid transparent;
+	border-bottom: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-left: 8px solid;
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: -16px;
+}
+.hit { background-color: #FFC12B; }
+.hit:after, .hit::after { border-left-color: #FFC12B; }
+.sale { background-color: #FF3F2B; }
+.sale:after, .sale::after { border-left-color: #FF3F2B; }
+.sale + .info--price { color: #FF3F2B }
+.new { background-color: #68BF7B; }
+.new:after, .new::after { border-left-color: #68BF7B; }
+
+.info--price { left: 50%; }
+.info--del-price { 
+	position: absolute;
+	top: 5px;
+	right: 0;
+}
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Our Blog Design 
+ * blog-header + blog-items
+ * --------------------------------------------------------------------------------
+ */
+.blog { background-color: #FFF; }
+.blog-header h2::before {
+	background: url(../asset/ui-icon-news.svg) no-repeat center center;
+	background-size: contain;
+}
+.blog-items:hover {
+	background: url(../asset/blog-image.png) no-repeat center center;
+	background-size: 100% auto;
+}
+
+.blog-items > .hit-area { position: relative; }
+.blog-items--content {
+	width: 158px;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+.blog-items.row-1 .blog-items--content { width: 180px; }
+.blog-items.row-2 { text-align: center; }
+.blog-items.row-2 p:first-child { margin-bottom: 15px; }
+.blog-items.row-2 h3 { margin-bottom: 17px; }
+.blog-items.row-1 p { margin-bottom: 10px; }
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Testimonial Design 
+ * heading + paragraph + user-info
+ * --------------------------------------------------------------------------------
+ */
+
+.testimonial, .about {
+	float: left;
+	padding: 35px 40px;
+	position: relative;
+	text-align: center;
+	background-color: #FFF;
+}
+.testimonial::before, .about::before {
+	content: '';
+	width: 16px;
+	height: 16px;
+	position: absolute;
+	top: 35px;
+	left: 35px;
+}
+.testimonial::before {
+	background: url(../asset/ui-icon-chat-double.svg) center center no-repeat;
+	background-size: 100% 100%;
+}
+
+.testimonial h2 , .about h2{ margin-bottom: 75px; position: relative; }
+.testimonial h2::after, .about h2::after {
+	content: '';
+	position: absolute;
+	transform: translateX(-50%);
+	top: 60px;
+	left: 50%;
+
+	width: 13px;
+	height: 11px;
+	background: url(../asset/ui-icon-quote.svg) no-repeat center center;
+	background-size: 100% 100%;
+}
+.testimonial > p { line-height: 30px; }
+
+.user { padding: 0 100px; margin-top: 35px;}
+.user--image, .user--info { float: left; text-align: left;}
+.user--info {
+	padding: 15px 0px;
+	margin-left: 20px;
+}
+.user--info > p:first-child { margin-bottom: 3px; }
+
+.testimonial--refresh {
+	width: 30px;
+	height: 30px;
+	border: 1px solid #ECECEC;
+	position: absolute;
+	top: 35px;
+	right: 30px;
+	background: url(../asset/ui-icon-reload.svg) no-repeat center center;
+	background-size: 16px auto;
+}
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * About Design 
+ * heading + paragraph + user-info
+ * --------------------------------------------------------------------------------
+ */
+.about { position: relative; }
+.about::before {
+	background: url(../asset/ui-icon-briefcase.svg) no-repeat center center;
+	background-size: 100% 100%;
+}
+.about h2::after { top: 210px; }
+
+.img-box {
+	position: absolute;
+	top: 100px;
+	left: 0;
+}
+.img-box .micro-col-2 {
+	padding: 14px 25px 14px 45px;
+	position: relative;
+	background-color: #1F4BA5;
+	text-align: left;
+}
+.img-box .micro-col-2 > * { color: #FFF;} 
+.img-box > .clearfix > .micro-col-2::before {
+	content: '';
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	left: 15%;
+	width: 1rem;
+	height: 1rem;
+	background: url(../asset/ui-icon-storage.svg) no-repeat center center;
+	background-size: contain;
+}
+.img-box > .clearfix:last-child > .micro-col-2::before {
+	background: url(../asset/ui-icon-map.svg) no-repeat center center;
+}
+.img-box .micro-col-2 > span { display: block; line-height: 1em; }
+
+
+.about > p:first-of-type { margin-top: 220px; }
+.about > p:last-of-type { margin-top: 20px; line-height: 24px; }
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * All Brands Design 
+ * heading + paragraph + user-info
+ * --------------------------------------------------------------------------------
+ */
+
+.all-brands { border-top: 1px solid #ECECEC; position: relative; background-color: #FFF; }
+.all-brands > .clearfix > * { border-right: 1px solid #ECECEC; }
+.all-brands > header {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.all-brands > header > a > * {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+}
+.all-brands > header > a > h2 {
+	width: 70px;
+	line-height: 24px;
+	text-align: center;
+}
+.all-brands > header > a > span {
+	font-size: 60px;
+	line-height: 1em;
+	color: rgba(0,0,0,.1);
+}
+
+.brands-item {
+	background-size: 70px auto;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+.brands-item:nth-child(1) { background-image: url(../asset/logo-hnm.png); background-size: 60px auto; }
+.brands-item:nth-child(2) { background-image: url(../asset/logo-puma.png); }
+.brands-item:nth-child(3) { background-image: url(../asset/logo-adidas.png); background-size: 50px auto; }
+.brands-item:nth-child(4) { background-image: url(../asset/logo-converse.png); }
+.brands-item:nth-child(5) { background-image: url(../asset/logo-boss.png); }
+.brands-item:nth-child(6) { background-image: url(../asset/logo-nike.png); }
+.brands-item:nth-child(7) { background-image: url(../asset/logo-crown.png); }
+
+
+/* 
+ * --------------------------------------------------------------------------------
+ * Footer Design 
+ * footer list + address + etc + sns + payment
+ * --------------------------------------------------------------------------------
+ */
+
+.page-footer {
+	background-color: #222;
+	color: #FFF;
+}
+
+.footer--list {
+	padding: 20px 60px;
+	border-bottom: 1px solid #ECECEC;
+}
+.footer--item {
+	float: left;
+	margin-right: 80px;
+	position: relative;
+	line-height: 20px;
+}
+.footer--item::after {
+	content: '';
+	display: block;
+	width: 5px; height: 5px;
+	position: absolute;
+	transform: translateY(-50%);
+	top: 50%;
+	right: -42px;
+	border-radius: 50%;
+	background-color: #656565;
+}
+.footer--item:last-child { margin-right: 0; }
+.footer--item:last-child::after { display: none; }
+
+.footer-address {
+	text-align: center;
 }

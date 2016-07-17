@@ -22,6 +22,7 @@
 .fontcolor-grey { color: #868686; }
 .fontcolor-blue { color: #1F4BA5; }
 .fontcolor-white { color: #FFF; }
+.blog-items:hover .fontcolor-darkgrey, .blog-items:hover .fontcolor-grey { color: #FFF; }
 
 
 /* Font Family Settings */
