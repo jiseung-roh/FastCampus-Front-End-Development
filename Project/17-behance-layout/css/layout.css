@@ -13,7 +13,26 @@
 	width: 100%;
 	height: 58px;
 	/* I intentionally didn't give any padding value to the page-header considering the expansion the padding area of the anchor element */
+	position: relative;
 	background-color: rgb(19, 20, 24);
+}
+
+.brand, .utility-nav {
+	position: absolute;
+	top: 0;
+}
+.brand { 
+	left: 0;
+}
+.utility-nav {
+	right: 0;
+}
+
+.gnb {
+	position: absolute;
+	transform: translateX(-50%);
+	top: 0;
+	left: 50%;
 }
 
 .gnb .nav--item {
