@@ -6,11 +6,23 @@
 */
 
 
+/*
+ * Page Header Style
+*/
+.page-header {
+	width: 100%;
+	height: 58px;
+	/* I intentionally didn't give any padding value to the page-header considering the expansion the padding area of the anchor element */
+	background-color: rgb(19, 20, 24);
+}
+
+.gnb .nav--item {
+	padding-left: 13px;
+	padding-right: 13px;
+}
 
 /*
- * --------------------------------------------------------------------------------
  * Page Main Style
- * --------------------------------------------------------------------------------
 */
 
 .page-main {
