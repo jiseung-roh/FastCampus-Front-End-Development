@@ -1,0 +1,68 @@
+@charset "utf-8";
+/*
+ * --------------------------------------------------------------------------------
+ * Typography Stylesheet for Aware.com 
+ * type.css (c) jiseung.roh, 2016
+ * --------------------------------------------------------------------------------
+*/
+
+/* Default Settings */
+html {
+	font-family: 'Helvetica Neue', sans-serif;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: normal;
+	color: #2B2B2B;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* Page Header Typography */
+/* 01- quick-menu*/
+.quick-menu {
+	color: #3B3B3B;
+}
+.quick-menu h4 {
+	font-size: 11px;
+	line-height: 21px;
+	text-transform: uppercase;
+}
+/* quick-menu > message */
+.quick-menu .message-utility > a {
+	font-size: 11px;
+	line-height: 14px;
+	color: #1769FF;
+}
+
+.message--item .message--username {
+	font-size: 14px;
+	line-height: 20px;
+	color: #1769FF;
+}
+
+.message--item .message--content {
+	font-size: 13px;
+	line-height: 20px;
+}
+
+.date {
+	font-size: 11px;
+	line-height: 16px;
+	color: #A0A0A0;
+}
+
+/* quick-menu > notification */
+.notification--item p {
+	font-size: 13px;
+	line-height: 16px;
+}
+
+.notification--item .collection-link {
+	color: #1769FF;
+}
+
+.notification--item .date {
+	font-style: italic;
+}
