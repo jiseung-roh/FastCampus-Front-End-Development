@@ -20,16 +20,35 @@ a {
 }
 
 /* Page Header Typography */
+
+/* 00 - logo */
+.brand svg, .utility-nav svg {
+	fill: #FFF;
+}
+
 /* 01- quick-menu*/
+/* quick-menu > icons */
 .quick-menu {
 	color: #3B3B3B;
 }
+.quick-menu .icon {
+	display: block;
+	width: 21px;
+	padding-right: 5px;
+	margin-right: 6px;
+	font-size: 16px;
+	line-height: 1em;
+	text-align: center;
+	color: #A4A4A4;
+}
+
+/* quick-menu > hidden-menu */
 .quick-menu h4 {
 	font-size: 11px;
 	line-height: 21px;
 	text-transform: uppercase;
 }
-/* quick-menu > message */
+/* quick-menu > hidden-menu > message */
 .quick-menu .message-utility > a {
 	font-size: 11px;
 	line-height: 14px;
@@ -53,7 +72,7 @@ a {
 	color: #A0A0A0;
 }
 
-/* quick-menu > notification */
+/* quick-menu > hidden-menu > notification */
 .notification--item p {
 	font-size: 13px;
 	line-height: 16px;
@@ -65,4 +84,22 @@ a {
 
 .notification--item .date {
 	font-style: italic;
+}
+
+/* 02 - gnb */
+.gnb .nav--item a {
+	font-size: 15px;
+	line-height: 58px;
+	color: #A4A4A4;
+}
+
+.gnb .nav--item a:hover, .gnb .nav--item a:focus,
+.gnb .nav--item:first-child a {
+	color: #FFF;
+}
+
+.gnb .nav--item .subnav--item a {
+	font-size: 12px;
+	line-height: 26px;
+	color: #E5E5E5;
 }
