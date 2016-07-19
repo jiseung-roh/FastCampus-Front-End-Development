@@ -8,98 +8,88 @@
 
 /* Default Settings */
 html {
-	font-family: 'Helvetica Neue', sans-serif;
-	font-size: 16px;
-	font-weight: 400;
-	line-height: normal;
-	color: #2B2B2B;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  color: #2b2b2b;
 }
 
-a {
-	text-decoration: none;
-}
+a { text-decoration: none; }
 
 /* Page Header Typography */
 
 /* 00 - logo */
-.brand svg, .utility-nav svg {
-	fill: #FFF;
-}
+.logo svg,
+.utility-nav svg { fill: #fff; }
 
 /* 01- quick-menu*/
 /* quick-menu > icons */
-.quick-menu {
-	color: #3B3B3B;
-}
+.quick-menu { color: #3b3b3b; }
 .quick-menu .icon {
-	display: block;
-	width: 21px;
-	padding-right: 5px;
-	margin-right: 6px;
-	font-size: 16px;
-	line-height: 1em;
-	text-align: center;
-	color: #A4A4A4;
+  display: block;
+  width: 21px;
+  padding-right: 5px;
+  margin-right: 6px;
+  font-size: 16px;
+  line-height: 1em;
+  text-align: center;
+  color: #a4a4a4;
 }
 
 /* quick-menu > hidden-menu */
 .quick-menu h4 {
-	font-size: 11px;
-	line-height: 21px;
-	text-transform: uppercase;
+  font-size: 11px;
+  line-height: 21px;
+  text-transform: uppercase;
 }
 /* quick-menu > hidden-menu > message */
 .quick-menu .message-utility > a {
-	font-size: 11px;
-	line-height: 14px;
-	color: #1769FF;
+  font-size: 11px;
+  line-height: 14px;
+  color: #1769ff;
 }
 
 .message--item .message--username {
-	font-size: 14px;
-	line-height: 20px;
-	color: #1769FF;
+  font-size: 14px;
+  line-height: 20px;
+  color: #1769ff;
 }
 
 .message--item .message--content {
-	font-size: 13px;
-	line-height: 20px;
+  font-size: 13px;
+  line-height: 20px;
 }
 
 .date {
-	font-size: 11px;
-	line-height: 16px;
-	color: #A0A0A0;
+  font-size: 11px;
+  line-height: 16px;
+  color: #a0a0a0;
 }
 
 /* quick-menu > hidden-menu > notification */
 .notification--item p {
-	font-size: 13px;
-	line-height: 16px;
+  font-size: 13px;
+  line-height: 16px;
 }
 
-.notification--item .collection-link {
-	color: #1769FF;
-}
+.notification--item .collection-link { color: #1769ff; }
 
-.notification--item .date {
-	font-style: italic;
-}
+.notification--item .date { font-style: italic; }
 
 /* 02 - gnb */
 .gnb .nav--item a {
-	font-size: 15px;
-	line-height: 58px;
-	color: #A4A4A4;
+  font-size: 15px;
+  line-height: 58px;
+  color: #a4a4a4;
 }
 
-.gnb .nav--item a:hover, .gnb .nav--item a:focus,
-.gnb .nav--item:first-child a {
-	color: #FFF;
-}
+.gnb .nav--item a:hover,
+.gnb .nav--item a:focus,
+.gnb .nav--item:first-child a { color: #fff; }
 
 .gnb .nav--item .subnav--item a {
-	font-size: 12px;
-	line-height: 26px;
-	color: #E5E5E5;
+  font-size: 12px;
+  line-height: 26px;
+  color: #e5e5e5;
 }
