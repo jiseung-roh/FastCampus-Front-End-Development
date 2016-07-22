@@ -31,9 +31,11 @@ h1 {
 /* #Sample-1*/
 [id*="sample-"] {
   width: 80%;
-  margin-top: 1.5rem;
   margin-left: auto;
   margin-right: auto;
+}
+[id*="sample-"]:not(#sample-1) {
+  margin-top: 10rem;
 }
 /* pg-header*/
 #sample-1 .pg-header {
@@ -170,5 +172,116 @@ h1 {
   #sample-2 .section-2 {
     width: 100%;
     flex: 1 0 auto;
+  }
+}
+
+
+
+/* #Sample-3 */
+#sample-3 .pg-header {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  min-height: 20vh;
+  padding: 1rem;
+}
+#sample-3 .heading {
+  flex: 0 0 100px; /* 고정 */
+  height: 2rem;
+}
+#sample-3 .pg-nav {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  flex: 0 1 500px;
+  min-height: 4rem;
+}
+#sample-3 .nav-item {
+  flex: 0 0 100px;
+  height: 1.5rem;
+}
+#sample-3 .pg-main {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+}
+#sample-3 .section-group {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  flex: 1 1 70%;
+}
+#sample-3 .section-1,
+#sample-3 .section-2 {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  flex: 1 1 auto;
+  width: 100%;
+  padding: 1rem;
+}
+#sample-3 .section-1 .section-item,
+#sample-3 .section-2 .section-item {
+  flex: 1 0 30vh;
+  width: 100%;
+  padding: 1rem;
+}
+#sample-3 .section-1 .section-item:first-child { margin-bottom: 1rem; }
+#sample-3 .aside {
+  flex: 1 1 25%;
+  padding: 1rem;
+}
+#sample-3 .pg-footer {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  width: 100%;
+  height: 15vh;
+  padding: 1rem;
+}
+#sample-3 .footer-logo {
+  width: 100px;
+  height: 2rem;
+}
+
+@media screen and (max-width: 800px) {
+  #sample-3 .pg-header {
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  #sample-3 .heading {
+    flex: 0 0 2rem;
+    width: 100px;
+    margin-bottom: .5rem;
+  }
+  #sample-3 .pg-nav {
+    flex: 1 0 4rem;
+    width: 500px;
+  }
+  #sample-3 .aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 665px) {
+  #sample-3 .heading {
+    width: 2rem;
+    height: 2rem;
+  }
+  #sample-3 .pg-nav {
+    justify-content: flex-start;
+    width: 75%;
+  }
+  #sample-3 .nav-item:not(:last-child) {
+    margin-right: 1rem;
+  }
+  #sample-3 .pg-footer {
+    display: none;
   }
 }
